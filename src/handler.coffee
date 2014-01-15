@@ -27,7 +27,6 @@ class Handler
           loadavg: os.loadavg().join(', ')
           memoryUsage: JSON.stringify(process.memoryUsage())
         template: 'crashmail'
-        provider: 'preview'
       client.call('email.send', email, next)
     , callback
 
