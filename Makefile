@@ -1,6 +1,6 @@
 all: test
 
 test:
-	@./node_modules/.bin/mocha --reporter spec --compilers coffee:coffee-script test/helper.coffee
+	@./test/test.sh
 
 .PHONY: all test

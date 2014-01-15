@@ -2,7 +2,7 @@
   "name": "thor-monitor",
   "version": "0.0.0",
   "description": "bridge between pm2 and thorbuster",
-  "main": "./lib/index.js",
+  "main": "./index.js",
   "directories": {
     "test": "test"
   },
@@ -26,9 +26,14 @@
   "devDependencies": {
     "should": "~2.1.1",
     "cake-dog": "~0.2.3",
-    "mocha": "~1.17.0"
+    "mocha": "~1.17.0",
+    "pm2": "~0.7.0"
   },
   "dependencies": {
-    "pm2-interface": "~0.1.0"
+    "pm2-interface": "~0.1.0",
+    "graceful-logger": "~0.2.2",
+    "axon": "~1.0.0",
+    "axon-rpc": "0.0.2",
+    "async": "~0.2.9"
   }
 }
