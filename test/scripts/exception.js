@@ -1,3 +1,3 @@
 setInterval(function() {
-  throw new Error('unexpected error')
+  throw new Error('UNEXPECTED ERROR')
 }, 1000);

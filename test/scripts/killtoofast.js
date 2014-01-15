@@ -1,4 +1,3 @@
-setInterval(function() {
-  console.log('BOUM');
-  process.exit(1);
-}, 30);
+setTimeout(function() {
+  throw new Error('UNEXPECTED ERROR')
+}, 200);
