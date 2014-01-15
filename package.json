@@ -27,5 +27,8 @@
     "should": "~2.1.1",
     "cake-dog": "~0.2.3",
     "mocha": "~1.17.0"
+  },
+  "dependencies": {
+    "pm2-interface": "~0.1.0"
   }
 }
