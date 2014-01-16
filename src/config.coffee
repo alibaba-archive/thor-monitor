@@ -2,7 +2,7 @@ util = require('util')
 
 application =
   server: 'tcp://convert.teambition:4033'
-  emails: ['jingxin@teambition.com', 'qiang@teambition.com', 'sailxjx@gmail.com']
+  emails: ['jingxin@teambition.com', 'qiang@teambition.com']
   minUptime: 5000
 
 env =

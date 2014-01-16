@@ -10,7 +10,7 @@ class Handler
     _err = err.err
     _process = err.process
 
-    logger.warn("exception: #{err.message}")
+    logger.warn("exception: #{_err.message}")
 
     pm_uptime = _process.pm2_env?.pm_uptime or 0
     return callback(new Error('CRASHTOOFAST')) unless new Date - pm_uptime > config.minUptime
