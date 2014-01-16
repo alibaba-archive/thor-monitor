@@ -2,12 +2,15 @@ async = require('async')
 client = require('./client.js')
 config = require('./config')
 os = require('os')
+logger = require('graceful-logger')
 
 class Handler
 
   exception: (err, clu, callback = ->) =>
     _err = err.err
     _process = err.process
+
+    logger.warn("exception: #{err.message}")
 
     pm_uptime = _process.pm2_env?.pm_uptime or 0
     return callback(new Error('CRASHTOOFAST')) unless new Date - pm_uptime > config.minUptime
