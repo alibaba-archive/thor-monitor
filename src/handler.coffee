@@ -28,7 +28,8 @@ class Handler
           pmId: _process.pm2_env?.pm_id
           proc: JSON.stringify(_process, null, 2)
           loadavg: os.loadavg().join(', ')
-          memoryUsage: JSON.stringify(process.memoryUsage())
+          freemem: Math.round(os.freemem()/1024/1024) + ' MB'
+          uptime: Math.floor((new Date - pm_uptime) / 1000) + ' S'
         template: 'crashmail'
       client.call('email.send', email, next)
     , callback
