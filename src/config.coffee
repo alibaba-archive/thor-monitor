@@ -10,6 +10,7 @@ env =
   development:
     server: 'tcp://localhost:4033'
   mocha:
+    emails: ['jingxin@teambition.com']
     minUptime: 1000
     server: 'tcp://localhost:4033'
 
