@@ -1,6 +1,6 @@
 {
   "name": "thor-monitor",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "bridge between pm2 and thorbuster",
   "main": "./index.js",
   "directories": {
