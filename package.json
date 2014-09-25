@@ -27,13 +27,13 @@
     "should": "~2.1.1",
     "cake-dog": "~0.2.3",
     "mocha": "~1.17.0",
-    "pm2": "~0.7.0"
+    "pm2": "^0.10.8"
   },
   "dependencies": {
-    "pm2-interface": "~0.1.0",
-    "graceful-logger": "~0.2.2",
-    "axon": "~1.0.0",
-    "axon-rpc": "0.0.2",
-    "async": "~0.2.9"
+    "axon-rpc": "0.0.3",
+    "axon": "^2.0.1",
+    "pm2-interface": "^2.0.1",
+    "async": "^0.9.0",
+    "graceful-logger": "^0.4.1"
   }
 }
